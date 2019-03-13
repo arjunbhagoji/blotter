@@ -14,9 +14,9 @@ layout: default
 				</div>
 				<p>
 				<div class="smallhead">
-					{{ page.authors }}
-					{{ page.year }}.
-					{{ page.journal }}
+					{{ page.authors }},
+					<i>{{ page.venue }}</i>
+					<i>{{ page.year }}</i>
 				</div>
 			</div>
 		</div>
@@ -51,14 +51,14 @@ layout: default
 			</div>
 			<div class="bigspacer"></div>
 			{% endif %}
-			{% if page.doi %}
+			{% if page.arxiv %}
 			<div class="smallhead">
-				DOI
+				ArXiv
 			</div>
 			<div class="pad-left note">
 				<div class="smallspacer"></div>
 				<i class="fa fa-external-link fa-fw"></i>
-				<a class="off" href="https://doi.org/{{ page.doi }}">{{ page.doi }}</a>
+				<a class="off" href="https://arxiv.org/abs/{{ page.arxiv }}">{{ page.arxiv }}</a>
 			</div>
 			<div class="bigspacer"></div>
 			{% endif %}
