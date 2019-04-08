@@ -1,4 +1,4 @@
-# bedford lab research
+# Adversarial ML Research Website
 
 ## Build site
 
